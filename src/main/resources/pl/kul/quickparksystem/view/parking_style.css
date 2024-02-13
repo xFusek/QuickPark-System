@@ -1,0 +1,71 @@
+.parking-spot {
+    -fx-background-color: #00ff00; /* Kolor dla zwykłych miejsc */
+    -fx-text-fill: black;
+    -fx-min-width: 50px;
+    -fx-min-height: 30px;
+}
+
+.parking-spot:hover {
+    -fx-background-color: #33cc33; /* Jaśniejszy zielony przy najechaniu */
+}
+
+.parking-spot:pressed {
+    -fx-background-color: #268d26; /* Ciemniejszy zielony przy wciśnięciu */
+    -fx-translate-y: 2px; /* Przesunięcie przycisku w dół */
+}
+
+.parking-spot-disabled {
+    -fx-background-color: #0000ff; /* Kolor dla miejsc dla niepełnosprawnych */
+    -fx-text-fill: white;
+    -fx-min-width: 50px;
+    -fx-min-height: 30px;
+}
+
+.parking-spot-disabled:hover {
+    -fx-background-color: #6767fa; /* Jaśniejszy niebieski przy najechaniu */
+}
+
+.parking-spot-disabled:pressed {
+    -fx-background-color: #000099; /* Ciemniejszy niebieski przy wciśnięciu */
+    -fx-translate-y: 2px; /* Przesunięcie przycisku w dół */
+}
+
+.parking-spot-reserved {
+    -fx-background-color: #ff0000ff;
+    -fx-text-fill: white;
+    -fx-min-width: 50px;
+    -fx-min-height: 30px;
+}
+
+.parking-spot-reserved:hover {
+    -fx-background-color: #cc0000;
+}
+
+.parking-spot-reserved:pressed {
+    -fx-background-color: #990000;
+    -fx-translate-y: 2px;
+}
+
+.back-button {
+    -fx-background-color: #3078a8;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.back-button:hover {
+    -fx-background-color: #559edf;
+}
+
+.back-button:pressed {
+    -fx-background-color: #1f5c7a;
+    -fx-translate-y: 2px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+}
+
+.color-indicator {
+    -fx-min-width: 15px;
+    -fx-min-height: 15px;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+
+<!--parkingB-->
+
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.kul.quickparksystem.controller.Parking2Controller" spacing="10" alignment="CENTER" stylesheets="@parking_style.css">
+    <Label text="PARKING - B" style="-fx-font-size: 24;"/>
+    <VBox spacing="5">
+        <HBox spacing="5">
+            <Label styleClass="color-indicator" style="-fx-background-color: #00ff00;"/>
+            <Label text="- Available"/>
+        </HBox>
+        <HBox spacing="5">
+            <Label styleClass="color-indicator" style="-fx-background-color: #0000ff;"/>
+            <Label text="- For Disabled"/>
+        </HBox>
+        <HBox spacing="5">
+            <Label styleClass="color-indicator" style="-fx-background-color: #ff0000ff;"/>
+            <Label text="- Reserved"/>
+        </HBox>
+    </VBox>
+    <GridPane fx:id="parkingGrid" hgap="10" vgap="10" alignment="CENTER">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+        <!-- Górna linia miejsc parkingowych -->
+        <Button fx:id="spot1B" text="1" styleClass="parking-spot-disabled" GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot2B" text="2" styleClass="parking-spot-disabled" GridPane.rowIndex="0" GridPane.columnIndex="2" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot3B" text="3" styleClass="parking-spot-disabled" GridPane.rowIndex="0" GridPane.columnIndex="3" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot4B" text="4" styleClass="parking-spot-disabled" GridPane.rowIndex="0" GridPane.columnIndex="4" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot5B" text="5" styleClass="parking-spot" GridPane.rowIndex="0" GridPane.columnIndex="5" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot6B" text="6" styleClass="parking-spot" GridPane.rowIndex="0" GridPane.columnIndex="6" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot7B" text="7" styleClass="parking-spot" GridPane.rowIndex="0" GridPane.columnIndex="7" onAction="#handleParkingSpotAction"/>
+        <!-- Lewa linia miejsc parkingowych -->
+        <Button fx:id="spot8B" text="8" styleClass="parking-spot" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot9B" text="9" styleClass="parking-spot" GridPane.rowIndex="2" GridPane.columnIndex="0" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot10B" text="10" styleClass="parking-spot" GridPane.rowIndex="3" GridPane.columnIndex="0" onAction="#handleParkingSpotAction"/>
+        <!-- Prawa linia miejsc parkingowych -->
+        <Button fx:id="spot11B" text="11" styleClass="parking-spot" GridPane.rowIndex="1" GridPane.columnIndex="8" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot12B" text="12" styleClass="parking-spot" GridPane.rowIndex="2" GridPane.columnIndex="8" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot13B" text="13" styleClass="parking-spot" GridPane.rowIndex="3" GridPane.columnIndex="8" onAction="#handleParkingSpotAction"/>
+        <!-- Dolna linia miejsc parkingowych -->
+        <Button fx:id="spot14B" text="14" styleClass="parking-spot" GridPane.rowIndex="4" GridPane.columnIndex="1" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot15B" text="15" styleClass="parking-spot" GridPane.rowIndex="4" GridPane.columnIndex="2" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot16B" text="16" styleClass="parking-spot" GridPane.rowIndex="4" GridPane.columnIndex="3" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot17B" text="17" styleClass="parking-spot" GridPane.rowIndex="4" GridPane.columnIndex="4" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot18B" text="18" styleClass="parking-spot" GridPane.rowIndex="4" GridPane.columnIndex="5" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot19B" text="19" styleClass="parking-spot" GridPane.rowIndex="4" GridPane.columnIndex="6" onAction="#handleParkingSpotAction"/>
+        <Button fx:id="spot20B" text="20" styleClass="parking-spot" GridPane.rowIndex="4" GridPane.columnIndex="7" onAction="#handleParkingSpotAction"/>
+    </GridPane>
+    <Button fx:id="backButton" styleClass="back-button" text="Back" onAction="#handleBackAction" />
+
+</VBox>

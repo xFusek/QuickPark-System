@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+    <VBox  xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="pl.kul.quickparksystem.controller.DashboardController" stylesheets="@style.css" spacing="10.0" alignment="CENTER">
+        <Button fx:id="checkReservationButton" text="Check Reservation" onAction="#handleCheckReservation"/>
+        <Button fx:id="reserveSpotButton" text="Reserve Spot" onAction="#handleReserveSpot"/>
+        <Button fx:id="checkBalanceButton" text="My Balance" onAction="#handleCheckBalance"/>
+    </VBox>
+

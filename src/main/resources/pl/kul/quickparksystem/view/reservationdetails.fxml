@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="pl.kul.quickparksystem.controller.ReservationDetailsController" alignment="TOP_CENTER" spacing="10" stylesheets="@style.css">
+    <Label text="Reservation Details" styleClass="header-label"/>
+    <VBox fx:id="reservationsContainer" spacing="5" alignment="CENTER">
+        <!-- Buttons will be added here -->
+    </VBox>
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="prevPageButton" text="&lt;&lt;" onAction="#handlePrevPage"/>
+        <Label fx:id="currentPageLabel" text="1"/>
+        <Button fx:id="nextPageButton" text="&gt;&gt;" onAction="#handleNextPage"/>
+    </HBox>
+    <Button fx:id="backButton" text="Back" onAction="#handleBackAction"/>
+</VBox>

@@ -1,0 +1,2 @@
+admin,admin123,Jan,Kowalski
+seba,dresik,Sebastian,Nowak

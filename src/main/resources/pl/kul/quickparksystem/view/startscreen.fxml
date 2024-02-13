@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.kul.quickparksystem.controller.StartScreenController" alignment="CENTER" spacing="15" prefWidth="400" prefHeight="500" stylesheets="@style.css">
+    <Button fx:id="loginButton" text="Login" onAction="#handleLogin" styleClass="button" minWidth="200"/>
+    <Button fx:id="registerButton" text="Register" onAction="#handleRegister" styleClass="button" minWidth="200"/>
+</VBox>
+

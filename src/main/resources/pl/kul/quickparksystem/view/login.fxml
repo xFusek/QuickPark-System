@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.kul.quickparksystem.controller.LoginController" alignment="CENTER" spacing="10" prefWidth="400" prefHeight="500" stylesheets="@style.css">
+    <TextField fx:id="usernameField" maxWidth="200" promptText="Username"/>
+    <PasswordField fx:id="passwordField" maxWidth="200" promptText="Password"/>
+    <Button text="Login" onAction="#handleLogin" maxWidth="100"/>
+    <Button fx:id="backButton" styleClass="back-button" text="Go Back" onAction="#handleBackAction" />
+</VBox>

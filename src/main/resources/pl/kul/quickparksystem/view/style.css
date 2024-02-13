@@ -1,0 +1,43 @@
+.button {
+    -fx-background-color: #3078a8; /* Kolor tła */
+    -fx-background-radius: 5; /* Zaokrąglone rogi */
+    -fx-text-fill: white; /* Kolor tekstu */
+    -fx-font-weight: bold; /* Pogrubienie tekstu */
+    -fx-padding: 10 20; /* Wewnętrzny odstęp (góra/dół, lewo/prawo) */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); /* Cień */
+}
+
+.button:hover {
+    -fx-background-color: #559edf; /* Kolor tła przy najechaniu */
+}
+
+.button:pressed {
+    -fx-background-color: #1f5c7a; /* Kolor tła przy wciśnięciu */
+    -fx-translate-y: 2px; /* Przesunięcie przycisku w dół */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Mniejszy cień */
+}
+
+.back-button {
+    -fx-background-color: #ff6347; /* Kolor tła */
+    -fx-background-radius: 5; /* Zaokrąglone rogi */
+    -fx-text-fill: white; /* Kolor tekstu */
+    -fx-font-weight: bold; /* Pogrubienie tekstu */
+    -fx-padding: 10 20; /* Wewnętrzny odstęp (góra/dół, lewo/prawo) */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); /* Cień */
+}
+
+.back-button:hover {
+    -fx-background-color: #ff826e; /* Kolor tła przy najechaniu */
+}
+
+.back-button:pressed {
+    -fx-background-color: #e5533c; /* Kolor tła przy wciśnięciu */
+    -fx-translate-y: 2px; /* Przesunięcie przycisku w dół */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0); /* Mniejszy cień */
+}
+
+.header-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
